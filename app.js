@@ -5,7 +5,6 @@ const colors = require("colors")
 const cors = require("cors")
 
 dotenv.config()
-
 const app = express()
 
 app.use(express.json())
@@ -35,16 +34,10 @@ app.get("/", (req, res) => {
   res.status(200).json({ success: true, message: "Welcome to Backend Starter Template"})
 })
 
-const PORT = process.env.PORT || 8000
+const PORT = process.env.PORT || 3000
 
 app.listen(PORT, () => {
   console.log(
     `Server running in ${process.env.NODE_ENV} mode on port ${PORT}`.yellow.bold
   )
-})
-
-process.on("unhandledRejection", (err, promise) => {
-  console.log(`Error: ${err.message}`.red)
-  // Close app & exit process
-  app.close(() => process.exit(1))
 })
