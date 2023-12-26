@@ -1,0 +1,24 @@
+{
+  "name": "backend-starter-template",
+  "version": "1.0.0",
+  "description": "A starter template",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=production node app.js",
+    "dev": "NODE_ENV=development nodemon app.js"
+  },
+  "author": "Istiak Ahmad Polash",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "firebase-admin": "^12.0.0",
+    "mongodb": "^6.3.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
